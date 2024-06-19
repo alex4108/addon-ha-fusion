@@ -26,14 +26,17 @@ apparmor: true
 # ingress feature for the add-on
 ingress: true
 ingress_stream: true
-ingress_port: 8124
+ingress_port: 8099
 
 # enable api to get host port
 hassio_api: true
 
 # port to expose, null defaults to disabled
 ports:
-  8099/tcp: 8124
+  8099/tcp: 8099
+ports_description:
+  8099/tcp: Web interface and API
+webui: http://[HOST]:[PORT:8099]
 
 # docker hub
 image: matt8707/addon-ha-fusion-{arch}
