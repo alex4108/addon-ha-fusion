@@ -8,9 +8,6 @@ arch:
   - amd64
   - armv7
 
-# legacy config experience
-legacy: true
-
 # disable the docker default system init
 init: false
 
