@@ -26,6 +26,7 @@ apparmor: true
 # ingress feature for the add-on
 ingress: true
 ingress_stream: true
+ingress_port: 8124
 
 # enable api to get host port
 hassio_api: true
@@ -34,11 +35,8 @@ hassio_api: true
 ports:
   8099/tcp: 8124
 
-options:
-  HASS_URL: http://homeassistant
-
-schema:
-  HASS_URL: str
-
 # docker hub
 image: matt8707/addon-ha-fusion-{arch}
+
+schema:
+  hass_url: "str?" #optional
