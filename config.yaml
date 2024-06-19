@@ -37,7 +37,7 @@ hassio_api: true
 ports:
   8099/tcp: 8124
 
-environment:
+options:
   HASS_URL: http://homeassistant
 
 # docker hub
